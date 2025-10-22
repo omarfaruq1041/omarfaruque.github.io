@@ -1,0 +1,132 @@
+<!--
+Omar_Faruque_Online_Portfolio.html
+Single-file responsive portfolio template for a Site Engineer (Fiber/Tower)
+HOW TO USE:
+1) Replace placeholder text (NAME, ROLE, ABOUT, PROJECTS, CONTACT) below.
+2) Put real images in the `images/` folder and update the <img> src paths.
+3) Replace /resume.pdf with your real CV file.
+4) To host: push this file to GitHub (repo) and enable GitHub Pages OR drag-drop to Netlify/Vercel. See instructions after the HTML.
+
+QUICK HOST (GitHub Pages):
+- Create a new repository on GitHub named `your-username.github.io` (or any repo).
+- Add this HTML file as index.html on the repository root and push.
+- Visit https://your-username.github.io/ (if using repo named that) or enable Pages in repo settings.
+
+ALTERNATIVES: Carrd (no code), Wix/WordPress (drag & drop), Netlify (drag & drop or git).
+--><!doctype html>
+
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Omar Faruque — Site Engineer (Fiber)</title>
+  <meta name="description" content="Site Engineer — Fiber Link Monitoring, OTDR, Joint Maintenance, Site Reporting">
+  <style>
+    :root{--accent:#0b6;--dark:#0b1f2a;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;color:#111;background:#f7fafc}
+    header{background:linear-gradient(90deg, #062b3a 0%, #0b3b47 100%);color:white;padding:28px 18px}
+    .container{max-width:980px;margin:0 auto;padding:20px}
+    .hero{display:flex;gap:18px;align-items:center}
+    .avatar{width:110px;height:110px;border-radius:12px;background:#fff;flex:0 0 110px;overflow:hidden}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    h1{margin:0;font-size:24px}
+    p.lead{margin:8px 0 0;color:var(--muted)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;background:var(--accent);color:#012; font-weight:600}
+    section{margin:26px 0;padding:18px;background:white;border-radius:12px;box-shadow:0 6px 18px rgba(10,10,10,0.05)}
+    .grid{display:grid;gap:14px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#eefaf2;padding:8px 10px;border-radius:8px;font-weight:600}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+    .card{padding:14px;border-radius:10px;border:1px solid #eef3f5;background:#fff}
+    .card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    footer{color:#666;font-size:13px;text-align:center;margin:20px 0}
+    @media(max-width:720px){.hero{flex-direction:column;align-items:flex-start}.avatar{width:88px;height:88px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="hero">
+        <div class="avatar">
+          <!-- Replace with your photo: images/omar.jpg -->
+          <img src="images/placeholder-avatar.jpg" alt="Omar Faruque">
+        </div>
+        <div>
+          <h1>Omar Faruque — Site Engineer (Fiber)</h1>
+          <p class="lead">Experienced in tower site coordination, fiber joint maintenance, OTDR analysis, link-down reporting and field supervision.</p>
+          <p style="margin-top:12px"><a class="btn" href="/resume.pdf" target="_blank">Download CV (PDF)</a></p>
+        </div>
+      </div>
+    </div>
+  </header>  <main class="container">
+    <!-- About / Summary -->
+    <section>
+      <h2>Summary</h2>
+      <p>I am a Site Engineer working on fiber network monitoring and tower maintenance. I manage link-down notifications, prepare office reports, guide technicians for jointing and fault resolution, and verify OTDR results to locate faults quickly and accurately.</p>
+    </section><!-- Skills -->
+<section>
+  <h2>Core Skills</h2>
+  <div class="skills">
+    <div class="skill">Fiber Link Monitoring</div>
+    <div class="skill">OTDR Analysis</div>
+    <div class="skill">Joint Maintenance</div>
+    <div class="skill">Link Down Reporting</div>
+    <div class="skill">Technician Coordination</div>
+    <div class="skill">Excel Reporting</div>
+    <div class="skill">Basic Networking (CCNA)</div>
+    <div class="skill">GIS / Site Docs</div>
+  </div>
+</section>
+
+<!-- Projects / Experience -->
+<section>
+  <h2>Selected Projects & Case Studies</h2>
+  <div class="projects">
+    <!-- Project card: replace with real data -->
+    <article class="card">
+      <img src="images/otdr-sample.jpg" alt="OTDR result">
+      <h3>Link Down — Rapid Response (Example)</h3>
+      <p style="color:var(--muted);font-size:14px">Handled link down on 5 tower sites in single night: performed fault range identification using OTDR, guided technicians to joint, verified post-repair power loss & updated NOC report.</p>
+      <p style="margin-top:10px"><strong>Role:</strong> Coordinator & OTDR verifier</p>
+    </article>
+
+    <article class="card">
+      <img src="images/site-photo.jpg" alt="Tower site">
+      <h3>Fiber Joint Maintenance — Project X</h3>
+      <p style="color:var(--muted);font-size:14px">Prepared step-by-step jointing guideline and checklist that reduced repeat faults by ~15% on monitored routes.</p>
+      <p style="margin-top:10px"><strong>Deliverables:</strong> Checklist, photos, OTDR before/after screenshots.</p>
+    </article>
+
+    <!-- Add more project cards as needed -->
+  </div>
+</section>
+
+<!-- Achievements -->
+<section>
+  <h2>Achievements</h2>
+  <ul>
+    <li>Reduced average link downtime by coordinating faster response and verified fixes.</li>
+    <li>Documented standard jointing checklist used by field technicians.</li>
+    <li>Mentored junior technicians on OTDR basics and loss measurement.</li>
+  </ul>
+</section>
+
+<!-- Contact -->
+<section>
+  <h2>Contact</h2>
+  <p>If you'd like to see the full CV or discuss opportunities, contact me:</p>
+  <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+     <strong>Phone:</strong> +8801XXXXXXXXX</p>
+  <p>Or add links to LinkedIn / GitHub:</p>
+  <p><a href="#">LinkedIn</a> · <a href="#">GitHub</a></p>
+</section>
+
+  </main>  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Omar Faruque — Site Engineer. Built with a lightweight portfolio template.</p>
+    </div>
+  </footer>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+    </html>
